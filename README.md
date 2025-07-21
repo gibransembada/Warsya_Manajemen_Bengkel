@@ -1,119 +1,30 @@
-# MyBengkel - Aplikasi Manajemen Bengkel
+Warsya adalah sebuah aplikasi manajemen bisnis bengkel berbasis android yang menyediakan berbagai fitur untuk membantu pemilik bisnis bengkel dalam mengelola operasional bisnis mereka dengan lebih efisien.
 
-Aplikasi Flutter untuk manajemen bengkel yang memudahkan pemilik bengkel dalam mengelola pelanggan, spare part, work order, dan laporan keuangan.
+Fitur-fitur Warsya antara lain:
 
-## Fitur Utama
+Dashboard Lengkap: Menyediakan tampilan informasi yang terorganisir dengan baik dan mudah dipahami, termasuk informasi mengenai pendapatan, jumlah produk terjual, dan statistik transaksi.
+Pencatatan Data Transaksi: Memungkinkan pengguna untuk mencatat semua transaksi yang terjadi di bengkel, seperti produk serta jenis layanan yang dipesan, biaya, dan status pembayaran.
+Cetak Struk Transaksi: Memungkinkan pengguna untuk mencetak struk transaksi dengan mudah dan cepat sebagai bukti pembayaran atau catatan transaksi.
+Kirim Struk Transaksi: Memungkinkan pengguna untuk membagikan struk transaksi via whatsapp atau sosial media lain dengan mudah dan cepat sebagai bukti pembayaran atau catatan transaksi.
+Chat WhatsApp Pelanggan: Memungkinkan pengguna untuk melakukan chat via whatsapp tanpa perlu menyimpan nomor handphone pelanggan.
+Data Kendaraan Pelanggan: Memungkinkan pengguna untuk menyimpan data kendaraan pelanggan untuk memudahkan dalam service berkala.
+Pencatatan Estimasi Transaksi: Memungkinkan pengguna untuk memberikan estimasi biaya yang harus dikeluarkan oleh pelanggan sebelum melakukan pemesanan layanan.
+Manajemen Produk: Memungkinkan pengguna untuk mengatur dan mengelola harga dan stok produk yang tersedia di bengkel.
+Bundel Produk: Memudahkan penjualan pajet produk dengan harga khusus.
+Transfer Stok Produk: Transfer stok produk antar bengkel.
+Import Produk: Import produk dari file Excel ke dalam aplikasi hingga 500 produk sekaligus.
+Kartu Stok: Memungkinkan pengguna untuk melacak jumlah stok produk yang tersedia, sehingga memudahkan dalam pengelolaan persediaan dan menghindari kekurangan stok yang dapat menghambat operasional bisnis bengkel.
+Manajemen Pelanggan: Memungkinkan pengguna untuk menyimpan data pelanggan seperti nama dan nomor handphone.
+Manajemen Supplier: Memungkinkan pengguna untuk menyimpan data supplier seperti nama, nomor handphone dan alamat supplier.
+Pencatatan Data Pembelian: Memungkinkan pengguna untuk mencatat semua pembelian produk yang terjadi di bengkel, termasuk harga beli dan jumlah produk.
+Pencatatan Retur Pembelian: Memungkinkan pengguna untuk melakukan return atas pembelian produk yang terjadi di bengkel, termasuk harga beli dan jumlah produk.
+Buku Kas: Fitur buku kas memudahkan bengkel untuk melakukan pemeriksaan keuangan secara teratur. Hal ini penting untuk menjaga keseimbangan keuangan dan memastikan bahwa semua pemasukan dan pengeluaran tercatat dengan benar.
+Pencatatan Data Pemasukan: Memungkinkan pengguna untuk mencatat setiap pemasukan lain yang terkait dengan bisnis bengkel Anda, sehingga memudahkan dalam memonitor dan mengontrol pemasukan bisnis bengkel.
+Pencatatan Data Pengeluaran: Memungkinkan pengguna untuk mencatat setiap pengeluaran yang terkait dengan bisnis bengkel Anda, sehingga memudahkan dalam memonitor dan mengontrol pengeluaran bisnis bengkel.
+Pencatatan Data Kasbon: Memungkinkan pengguna untuk mencatat setiap kasbon dari mekanik.
+Stok opname: Bengkel dapat mengelola persedian stok produk dengan lebih baik, mengurangi kesalahan inventaris dan meningkatkan efisiensi operasional
+Manajemen Karyawan dan Mekanik: Memungkinkan pengguna untuk mengatur jadwal kerja dan tugas karyawan dan mekanik, serta melihat performa mereka.
+Penggajian Karyawan: Membuat slip gaji karyawan.
+Laporan: Menyediakan laporan transaksi, pembayaran, penjualan produk, komisi, jasa, bundle produk, stok, pembelian, retur pembelian, buku kas, pemasukan, pengeluaran, kasbon dan laba rugi, sehingga pengguna dapat memantau kinerja bisnis secara keseluruhan.
 
-### 1. Autentikasi & Manajemen Bengkel
-
-- Login dan registrasi pengguna
-- Pembuatan profil bengkel baru
-- Manajemen profil bengkel
-
-### 2. Manajemen Pelanggan
-
-- Tambah, edit, dan hapus data pelanggan
-- Riwayat transaksi pelanggan
-- Pencarian dan filter pelanggan
-
-### 3. Manajemen Spare Part
-
-- Inventaris spare part dengan stok
-- Harga beli dan harga jual
-- Pencatatan pembelian spare part
-- Riwayat pembelian
-
-### 4. Work Order
-
-- Pembuatan work order baru
-- Pemilihan pelanggan dan spare part
-- Status work order (pending, dikerjakan, selesai, dibayar)
-- Detail work order lengkap
-- **Generasi nota PDF**
-- **Bagikan nota via WhatsApp, Email, dll**
-
-### 5. Laporan Keuangan
-
-- **Dashboard dengan statistik real-time**
-- **Filter periode:** Hari Ini, Minggu Ini, Bulan Ini, Tahun Ini
-- **Riwayat pendapatan dengan kategori:**
-  - **Harian**: Data 30 hari terakhir (hari ini disorot)
-  - **Mingguan**: Data 12 minggu terakhir
-  - **Bulanan**: Data 12 bulan terakhir
-  - **Tahunan**: Data 5 tahun terakhir
-- Rincian breakdown (work orders, spare part sales, total customers)
-
-## Teknologi yang Digunakan
-
-- **Frontend**: Flutter
-- **Backend**: Firebase (Authentication, Firestore)
-- **State Management**: Provider
-- **PDF Generation**: pdf package
-- **Printing**: printing package
-- **Sharing**: share_plus package
-- **Charts**: fl_chart
-- **Date Formatting**: intl
-
-## Struktur Proyek
-
-```
-lib/
-├── models/           # Model data
-├── providers/        # State management
-├── screens/          # Halaman aplikasi
-├── services/         # Layanan API dan Firebase
-└── main.dart         # Entry point aplikasi
-```
-
-## Cara Menjalankan
-
-1. Clone repository ini
-2. Install dependencies: `flutter pub get`
-3. Konfigurasi Firebase (tambahkan file konfigurasi)
-4. Jalankan aplikasi: `flutter run`
-
-## Fitur Laporan Keuangan Terbaru
-
-### Filter Periode
-
-Aplikasi sekarang memiliki 4 filter periode untuk melihat total pendapatan:
-
-- **Hari Ini**: Pendapatan hari ini
-- **Minggu Ini**: Pendapatan minggu ini (Senin-Minggu)
-- **Bulan Ini**: Pendapatan bulan ini
-- **Tahun Ini**: Pendapatan tahun ini
-
-### Riwayat Pendapatan
-
-Aplikasi memiliki fitur riwayat pendapatan yang komprehensif:
-
-- **Tampilan Harian**: Melihat pendapatan per hari untuk 30 hari terakhir
-  - **Hari ini disorot** dengan warna biru dan badge "HARI INI"
-- **Tampilan Mingguan**: Melihat pendapatan per minggu untuk 12 minggu terakhir
-- **Tampilan Bulanan**: Melihat pendapatan per bulan untuk 12 bulan terakhir
-- **Tampilan Tahunan**: Melihat pendapatan per tahun untuk 5 tahun terakhir
-
-### Cara Menggunakan
-
-1. Buka menu "Laporan Keuangan"
-2. Pilih periode di bagian atas (Hari Ini/Minggu Ini/Bulan Ini/Tahun Ini)
-3. Scroll ke bagian "Riwayat Pendapatan"
-4. Pilih kategori yang diinginkan (Harian/Mingguan/Bulanan/Tahunan)
-5. Data akan otomatis diperbarui sesuai periode yang dipilih
-6. Hari ini akan otomatis disorot dengan warna biru di tampilan harian
-
-### Sumber Data
-
-Pendapatan dihitung dari:
-
-- Work Order dengan status "dibayar"
-- Penjualan spare part
-- Total jasa dan spare part dalam setiap transaksi
-
-## Kontribusi
-
-Silakan berkontribusi dengan membuat pull request atau melaporkan bug melalui issues.
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah MIT License.
+Dengan fitur-fitur tersebut, Warsya dapat membantu pemilik bisnis bengkel dalam mengelola operasional bisnis mereka dengan lebih efisien dan meningkatkan pengalaman pelanggan di bengkel.
