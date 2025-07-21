@@ -1,0 +1,27 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "bengkelapp-9ea95",
+          "appId": "1:125884063418:android:17342d894f32a0e8b2ac83",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "bengkelapp-9ea95",
+          "configurations": {
+            "android": "1:125884063418:android:17342d894f32a0e8b2ac83",
+            "ios": "1:125884063418:ios:0d283bf8201011bab2ac83",
+            "web": "1:125884063418:web:c0f01faa6f075693b2ac83"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}
